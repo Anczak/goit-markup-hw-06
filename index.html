@@ -409,7 +409,7 @@
         </div>
         <div>
           <h3 class="footer-header">ZAPISZ SIĘ DO NEWSLETTERA</h3>
-          <form>
+          <div class="footer-newsletter">
             <input
               id="newsletter"
               name="newsletter"
@@ -417,8 +417,12 @@
               placeholder="Email"
               type="text"
             />
-            <input class="newsletter-btn" type="submit" value="Zapisz się" />
-          </form>
+            <button class="newsletter-btn" type="button">
+              Zapisz się<svg width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
