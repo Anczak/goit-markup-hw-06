@@ -1,5 +1,6 @@
 :root {
   --font-primary: "Roboto", sans-serif;
+  --white: #fff;
   --brand-blue: #2196f3;
   --brand-black: #212121;
   --brand-gray: #757575;
@@ -33,7 +34,7 @@ body {
 }
 .modal-window {
   position: absolute;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 4px;
   width: 528px;
   height: 581px;
@@ -65,7 +66,7 @@ body {
   flex-direction: column;
   gap: 4px;
 }
-.form-input-label {
+.form-input-box {
   padding: 11px 12px 11px 12px;
   display: flex;
   align-items: center;
@@ -96,8 +97,8 @@ body {
   line-height: 14px;
   letter-spacing: 0.01em;
 }
-.form-input-label:hover,
-.form-input-label:focus-within {
+.form-input-box:hover,
+.form-input-box:focus-within {
   border-color: var(--brand-blue);
   fill: var(--brand-blue);
 }
@@ -130,7 +131,7 @@ body {
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: var(--white);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
@@ -179,7 +180,7 @@ header > div {
 .container-footer {
   display: flex;
   padding: 60px 0;
-  gap: 70px;
+  justify-content: space-between;
 }
 .container-header {
   display: flex;
@@ -211,7 +212,7 @@ header .logo {
   justify-content: center;
 }
 .footer-header {
-  color: white;
+  color: var(--white);
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -244,8 +245,8 @@ header .logo {
   display: flex;
   align-items: center;
   gap: 24px;
-  fill: white;
-  color: white;
+  fill: var(--white);
+  color: var(--white);
   text-align: center;
   letter-spacing: 0.06em;
   font-weight: 700;
@@ -273,7 +274,7 @@ header .logo {
   max-width: 20px;
   max-height: 20px;
   padding: 12px;
-  fill: white;
+  fill: var(--white);
 }
 .order-solution {
   display: flex;
@@ -292,7 +293,7 @@ header .logo {
   margin-bottom: 30px;
   max-width: 696px;
   text-align: center;
-  color: white;
+  color: var(--white);
   font-size: 44px;
   font-weight: 900;
   letter-spacing: 0.06em;
@@ -307,7 +308,7 @@ header .logo {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  color: white;
+  color: var(--white);
   background-color: var(--brand-blue);
   letter-spacing: 0.06em;
   cursor: pointer;
@@ -383,7 +384,7 @@ header .logo {
   top: 224px;
   width: 100%;
   background: rgba(47, 48, 58, 0.8);
-  color: #fff;
+  color: var(--white);
   padding-top: 27px;
   padding-bottom: 27px;
   text-align: center;
@@ -422,7 +423,7 @@ header .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: var(--white);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
     0 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
@@ -451,7 +452,7 @@ header .logo {
   transition: 250ms fill var(--trasnition-master);
 }
 .team-member-social-link:hover .team-member-social-svg {
-  fill: white;
+  fill: var(--white);
 }
 .our-customers-list {
   display: flex;
@@ -504,7 +505,7 @@ header .logo {
 }
 .filter-button:hover {
   background-color: var(--brand-blue);
-  color: white;
+  color: var(--white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -556,7 +557,7 @@ header .logo {
   font-style: normal;
   font-size: 18px;
   line-height: 26px;
-  color: #fff;
+  color: var(--white);
 }
 .project-card-desc {
   color: var(--brand-gray);
@@ -568,7 +569,7 @@ header .logo {
   flex-direction: column;
   gap: 9px;
   font-style: normal;
-  color: white;
+  color: var(--white);
 }
 .address-element {
   font-size: 14px;
@@ -625,5 +626,5 @@ address {
   color: var(--brand-black);
 }
 footer .logo > span {
-  color: white;
+  color: var(--white);
 }
